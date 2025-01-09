@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Contact{% endblock title %}
+{% block body %}
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center mb-5">
+                <h2 class="heading-section">Contact Us</h2>
+            </div>
+        </div>
+        <form method="post" action="/contact">
+            {% csrf_token %}
+             <div class="mb-3">
+                <label for="username" class="form-label">User name</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Enter name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone number</label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Phone number">
+              </div>
+              <div class="mb-3">
+                <label for="desc" class="form-label">Tell me about you want me conatct me for...</label>
+                <textarea class="form-control" name="desc" id="desc" rows="3"></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit"> Submit</button>
+          </form>
+    </div>
+</section>
+{% comment %}
+<script src="/js/jquery.min.js"></script>
+<script src="/js/popper.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.validate.min.js"></script>
+<script src="/js/main.js"></script> {% endcomment %}
+{% endblock body %}

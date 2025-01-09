@@ -1,0 +1,350 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+<div class="container-fluid px-0">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/images/img1.jpg" class="d-block w-100 height:400px" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src='/static/images/img2.jpg' class="d-block w-100 height:400px" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/static/images/img5.jpg" class="d-block w-100 height:400px" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/static/images/img4.jpg" class="d-block w-100 height:400px" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<div class="container my-3">
+    <h2 class="my-4">Popular destinations</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://rukmini-ct.flixcart.com/w_176,h_178,f_auto,q_auto,c_fill,e_sharpen:80,g_auto,fl_progressive/offermgmt-prod/offermgmt/hotelsCommonImages/tripSuggestor/manali.jpg"
+                    class="d-block w-100 height:400px" alt="...">
+                <div class="card-body">
+                    <h3>Manali </h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+
+                <img src="https://rukmini-ct.flixcart.com/w_176,h_178,f_auto,q_auto,c_fill,e_sharpen:80,g_auto,fl_progressive/offermgmt-prod/offermgmt/hotelsCommonImages/tripSuggestor/goa.jpg"
+                    class="d-block w-100 height:400px" alt="...">
+                <div class="card-body">
+                    <h3>Goa </h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+
+                <img src="https://rukmini-ct.flixcart.com/w_176,h_178,f_auto,q_auto,c_fill,e_sharpen:80,g_auto,fl_progressive/offermgmt-prod/offermgmt/hotelsCommonImages/tripSuggestor/bangalore.jpg"
+                    class="d-block w-100 height:400px" alt="...">
+                <div class="card-body">
+                    <h3>Bangalore </h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="my-4">Explore these unique stays</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+            <div class="card shadow-sm">
+
+                <img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/PARTNER_Houseboat_1_Denmark_01.jpg"
+                    class="d-block w-100 height:400px" alt="...">
+                <div class="card-body">
+                    <h3>Houseboat </h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/VRBO_APFT2_BARCELONA_THERIN_HOUSE_1_1439.jpg"
+                    class="d-block w-100 height:400px" alt="...">
+
+                <div class="card-body">
+                    <h3>Villa </h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/PARTNER_Alltybrain_Farm_Cottages_.jpg"
+                    class="d-block w-100 height:400px" alt="...">
+
+                <div class="card-body">
+                    <h3>collages </h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="my-4">Discover your new favourite stay</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/0ca4d47a-be2c-4971-8282-3511f49607f1.jpeg"
+                    class="d-block w-100 height:400px" alt="...">
+
+                <div class="card-body">
+                    <h3>Hot tub </h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/d1e5d296-4bcb-4d1a-8848-9de6d9cea802.jpeg"
+                    class="d-block w-100 height:400px" alt="...">
+
+                <div class="card-body">
+                    <h3>Pet friendly </h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/27/5bb7f1c3-dd6c-465f-90e8-ac07b9a66ba5.jpeg"
+                    class="d-block w-100 height:400px" alt="...">
+                <div class="card-body">
+                    <h3>Apartment </h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <h2 class="my-4">Recommended stays for you</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/27/a63f5ab1-8592-4414-8a17-c2b3b2d29671.jpeg"
+                    class="d-block w-100 height:400px" alt="...">
+
+                <div class="card-body">
+                    <h3>Spa </h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/27/e6f49469-b67f-485b-8aaf-f14a79d0d164.jpeg"
+                    class="d-block w-100 height:400px" alt="...">
+
+                <div class="card-body">
+                    <h3>All inclusive </h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/25/5fe75c4c-ada4-4ad5-897f-395a8d1576e2.jpeg"
+                    class="d-block w-100 height:400px" alt="...">
+
+                <div class="card-body">
+                    <h3>Pool </h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="my-4">Explore stays in trending destinations</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://mediaim.expedia.com/destination/2/38b6f8b65583e78116e842a0688b8a39.jpg"
+                    class="d-block w-100 height:400px" alt="...">
+
+                <div class="card-body">
+                    <h3>Prayagraj </h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://mediaim.expedia.com/destination/1/7d01ed01c22a1685a1f2046a37ac7f1f.jpg?impolicy=fcrop&amp;w=1000&amp;h=563&amp;p=1&amp;q=medium"
+                    class="d-block w-100 height:400px" alt="...">
+
+                <div class="card-body">
+                    <h3>Lahore </h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://mediaim.expedia.com/destination/1/7fea91b3cf3e4df79526336945b0493b.jpg?impolicy=fcrop&amp;w=1000&amp;h=563&amp;p=1&amp;q=medium"
+                    class="d-block w-100 height:400px" alt="...">
+                <div class="card-body">
+                    <h3>Mumbai </h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    {% endblock body %}

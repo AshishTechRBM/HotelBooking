@@ -4,6 +4,7 @@ from home.models import Contact
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,logout,login
+from django.http import HttpResponseRedirect, JsonResponse
 # Create your views here.
 def index(request):
     if request.user.is_anonymous:
@@ -41,6 +42,12 @@ def loginUser(request):
      if request.method == "POST":
           username = request.POST.get('username')
           password = request.POST.get('password')
+
+          user_obj = User.objects.filter(username = username)
+
+          if not user_obj.exists():
+               messages.warning(request, 'Account not found')
+               return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
           user = authenticate(username=username, password=password)
           if user is not None:
